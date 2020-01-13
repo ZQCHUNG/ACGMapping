@@ -12,7 +12,8 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "api/values",
+      //Web API 的專案範本預設一啟動會開啟 api/values 這個路徑，將launchUrl設為""避免這預設動作
+      "launchUrl": "",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -20,7 +21,8 @@
     "ACGMapping": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/values",
+      //Web API 的專案範本預設一啟動會開啟 api/values 這個路徑，將launchUrl設為""避免這預設動作
+      "launchUrl": "",
       "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
