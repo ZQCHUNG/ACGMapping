@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 
-namespace ACGMapping
+namespace ACGMapping.Infrastructure.MiddleWare
 {
     public class SpaMiddleware
     {
@@ -27,8 +27,6 @@ namespace ACGMapping
             await _next.Invoke(context);
         }
     }
-
-    // Extension method used to add the middleware to the HTTP request pipeline.
     public static class SpaMiddlewareExtensions
     {
         public static IApplicationBuilder UseSpaMiddleware(this IApplicationBuilder builder)
@@ -36,4 +34,5 @@ namespace ACGMapping
             return builder.UseMiddleware<SpaMiddleware>();
         }
     }
+
 }
