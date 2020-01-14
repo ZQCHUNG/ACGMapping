@@ -40,7 +40,6 @@ namespace ACGMapping
             app.UseStaticFiles();
 
             app.UseSpaMiddleware();
-
             app.UseMvc();
         }
     }
